@@ -1,0 +1,126 @@
+body{
+  background-color: white;
+}
+.sidebar{
+    background-color:white;
+    height: 5em;
+    box-shadow:2px 3px rgb(184, 184, 184);
+
+   
+}
+.search-box{
+    position: absolute;
+    margin-left: 18%;
+
+}
+
+.search-box input{
+height: 2.5em;
+width: 27em;
+padding-left: 50px;
+border: 2px solid rgb(235, 232, 232);
+border-radius: 10px;
+font-size: 1em;
+margin-top: 15px;
+
+}
+#icons img {
+    float: right;
+    width: 1.6%;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+.search-image{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 4%
+}
+
+/*************** 
+media query ***********/
+
+@media screen and (max-width: 619px) {
+    .search-box{
+        margin-left: 10%;
+        
+    }
+    .search-box input {
+       width: 0px;
+       height: 40px;
+       padding: 0px 0px;
+       border-radius: 90px;
+       border: 0px;
+       padding-right: 50px;
+       transition: 1.5s;
+       background: #edf0f1;
+       
+    }
+    .search-box input:focus{
+        width: 8em;
+        padding-left: 32px;
+
+    }
+    .search-box:before{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        right: 18px;
+        line-height: 50px;
+        color: #006990
+
+    }
+    .search-image{
+        top: 27px;
+        width: 15px;
+        left: 15px;
+        
+    }
+    #icons img {
+        margin-top: 30px;
+        width: 0.8em;
+        border-left: 90px;
+
+    }
+}
+@media screen and (max-width: 860px) and (min-width: 620px){
+
+    .search-box{
+        margin-left: 20%;
+        
+    }
+    .search-box input {
+       width: 0px;
+       height: 40px;
+       padding: 0px 0;
+       border-radius: 90px;
+       border: 0px;
+       padding-right: 50px;
+       transition: 1.5s;
+       background: #edf0f1;
+    }
+    .search-box input:focus{
+        width: 12em;
+        padding-left: 32px;
+
+    }
+    .search-box:before{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        right: 18px;
+        line-height: 50px;
+
+    }
+    .search-image{
+        top: 27px;
+        width: 15px;
+        left: 15px;
+        
+    }
+    #icons img {
+        margin-top: 30px;
+        width: 0.8em
+    }
+
+    
+   
+}
